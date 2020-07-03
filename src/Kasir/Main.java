@@ -18,7 +18,8 @@ public class Main {
        
        //Java Library Scanner
        Scanner scan = new Scanner(System.in);
-       
+       for (String i = "Y"; i.equals("Y")||i.equals("y"); )
+        {
         //Header Toko
         System.out.println("======================================");
         System.out.println("||           WARUNG CAK BISRI       ||");
@@ -57,9 +58,8 @@ public class Main {
         //Variable Menu
         int mnNomor = 0, mnJumlah = 0;
         
-        for (String i = "Y"; i.equals("Y")||i.equals("y"); )
-        {
-        System.out.println("_____________________________________");
+        
+    
         //Input No Pesanan pada menu
         System.out.print("Pilih Nomor Pesanan yang ada di Menu : ");
         mnNomor = scan.nextInt();
