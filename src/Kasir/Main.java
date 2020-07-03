@@ -6,6 +6,7 @@
 package Kasir;
 
 import java.util.Scanner;
+import java.util.*;
 
 /**
  *
@@ -13,6 +14,8 @@ import java.util.Scanner;
  */
 public class Main {
         public static void main(String[] args) {
+            
+       
        //Java Library Scanner
        Scanner scan = new Scanner(System.in);
        
@@ -32,6 +35,16 @@ public class Main {
         System.out.println("|5 Seblak          |   Rp 15.000     |");
         System.out.println("|6 Gado-Gado       |   Rp 10.000     |");
         System.out.println("======================================");
+        
+        
+        //Tanggal
+        String months[] = {
+         "Jan", "Feb", "Mar", "Apr",
+        "May", "Jun", "Jul", "Aug",
+        "Sep", "Oct", "Nov", "Dec"};
+        int year;
+        
+        GregorianCalendar gcalendar = new GregorianCalendar();
         
         //Pembayaran & kembalian
         int bayar, kembalian;
@@ -101,9 +114,16 @@ public class Main {
             System.out.println("Masukkan Jumlah Uang : ");
             bayar = scan.nextInt();
             kembalian = bayar-harga;
+
             System.out.println("======================================");
             System.out.println("||         WARUNG CAK BISRI         ||");
             System.out.println("||    Dsn. Bolorejo Ds. Mojojajar   ||");
+            System.out.print("||        "+gcalendar.get(Calendar.DATE));
+            System.out.print(" "+ months[gcalendar.get(Calendar.MONTH)]);
+            System.out.print(" "+gcalendar.get(Calendar.YEAR)+", ");
+            System.out.print(gcalendar.get(Calendar.HOUR) + ":");
+            System.out.print(gcalendar.get(Calendar.MINUTE) + ":");
+            System.out.println(gcalendar.get(Calendar.SECOND)+"       ||");
             System.out.println("||        Telp. 081259780718        ||");
             System.out.println("======================================");
             System.out.println("Anda Memesan :                        ");
@@ -125,5 +145,6 @@ public class Main {
         
         
     }
-    
 }
+
+   
