@@ -111,7 +111,7 @@ public class Main {
             }
             
             System.out.println("Total Yang harus di bayar = Rp."+harga);
-            System.out.println("Masukkan Jumlah Uang : ");
+            System.out.print("Masukkan Jumlah Uang : ");
             bayar = scan.nextInt();
             kembalian = bayar-harga;
 
