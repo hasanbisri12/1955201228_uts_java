@@ -14,7 +14,10 @@ import java.util.*;
  */
 public class Main {
         public static void main(String[] args) {
-            
+       
+        //Nama Pemesan dan Nomor Kursi
+        String nama_pemesan;
+        int nomor_kursi;
        
        //Java Library Scanner
        Scanner scan = new Scanner(System.in);
@@ -22,9 +25,16 @@ public class Main {
         {
         //Header Toko
         System.out.println("======================================");
+        System.out.println("||           SELAMAT DATANG DI      ||");
         System.out.println("||           WARUNG CAK BISRI       ||");
         System.out.println("======================================");
+        System.out.print("Masukkan Nama Pemesan : ");
+        nama_pemesan = scan.nextLine();
+        System.out.print("Masukkan Nomor Kursi : ");
+        nomor_kursi = scan.nextInt();
+        
         //Menampilkan Menu Makanan
+        System.out.println("======================================");
         System.out.println("|           o MENU MAKANAN o         |");
         System.out.println("|           WARUNG CAK BISRI         |");
         System.out.println("======================================");
@@ -57,6 +67,8 @@ public class Main {
         
         //Variable Menu
         int mnNomor = 0, mnJumlah = 0;
+        
+        
         
         
     
@@ -126,7 +138,10 @@ public class Main {
             System.out.println(gcalendar.get(Calendar.SECOND)+"       ||");
             System.out.println("||        Telp. 081259780718        ||");
             System.out.println("======================================");
-            System.out.println("Anda Memesan :                        ");
+            System.out.println("Nama Pemesan : "+nama_pemesan);
+            System.out.println("Nomor Kursi  : "+nomor_kursi);
+            System.out.println("--------------------------------------");
+            System.out.println("Pesanan Anda :                        ");
             System.out.println(" " + menu +"   " + "X"+mnJumlah +"   " + "Rp"+ harga);
             System.out.println("--------------------------------------");
             System.out.println("Total                " + "Rp" + harga);
