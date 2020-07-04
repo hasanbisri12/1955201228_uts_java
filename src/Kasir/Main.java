@@ -50,9 +50,9 @@ public class Main {
         
         //Tanggal
         String months[] = {
-         "Jan", "Feb", "Mar", "Apr",
-        "May", "Jun", "Jul", "Aug",
-        "Sep", "Oct", "Nov", "Dec"};
+         "Januari", "Februari", "Maret", "April",
+        "Mei", "Juni", "Juli", "Agustus",
+        "September", "Oktober", "November", "December"};
         int year;
         
         GregorianCalendar gcalendar = new GregorianCalendar();
@@ -131,11 +131,11 @@ public class Main {
             System.out.println("||         WARUNG CAK BISRI         ||");
             System.out.println("||    Dsn. Bolorejo Ds. Mojojajar   ||");
             System.out.print("||        "+gcalendar.get(Calendar.DATE));
-            System.out.print(" "+ months[gcalendar.get(Calendar.MONTH)]);
-            System.out.print(" "+gcalendar.get(Calendar.YEAR)+", ");
+            System.out.print("-"+ months[gcalendar.get(Calendar.MONTH)]);
+            System.out.print("-"+gcalendar.get(Calendar.YEAR)+", ");
             System.out.print(gcalendar.get(Calendar.HOUR) + ":");
             System.out.print(gcalendar.get(Calendar.MINUTE) + ":");
-            System.out.println(gcalendar.get(Calendar.SECOND)+"       ||");
+            System.out.println(gcalendar.get(Calendar.SECOND)+"      ||");
             System.out.println("||        Telp. 081259780718        ||");
             System.out.println("======================================");
             System.out.println("Nama Pemesan : "+nama_pemesan);
